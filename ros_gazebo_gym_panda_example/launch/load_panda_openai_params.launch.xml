@@ -1,0 +1,4 @@
+<launch>
+    <!-- Retrieve ros_gazebo_gym environment and learning parameters -->
+    <rosparam command="load" file="$(find ros_gazebo_gym_panda_example)/config/ros_gazebo_gym_panda_example_params.yaml" />
+</launch>

@@ -1,0 +1,13 @@
+<launch>
+    <!--Control arguments-->
+    <!--    The control type used for controlling the robot (Options: trajectory, position, effort, end_effector)-->
+    <arg name="control_type" default="effort"/>
+
+    <!-- Retrieve ros_gazebo_gym environment and learning parameters -->
+    <include file="$(find ros_gazebo_gym_panda_example)/launch/load_panda_openai_params.launch.xml"/>
+
+    <!-- Launch the training system -->
+    <node pkg="ros_gazebo_gym_panda_example" name="ros_gazebo_gym_panda_training_example" type="start_sac_baselines.py" output="screen">
+        <param name="control_type" value="$(arg control_type)"/>
+    </node>
+</launch>
