@@ -1,0 +1,63 @@
+{
+  "name": "ros-gazebo-gym-examples",
+  "version": "1.0.0",
+  "description": "Several usage examples for the gym task environments in the ros-gazebo-gym package.",
+  "keywords": [
+    "reinforcement-learning",
+    "robotics",
+    "simulation",
+    "openai-gym",
+    "ros",
+    "examples",
+    "gym",
+    "gazebo",
+    "gym-environments",
+    "environments",
+    "ros_gazebo_gym"
+  ],
+  "homepage": "https://github.com/rickstaa/ros-gazebo-gym-examples#readme",
+  "bugs": {
+    "url": "https://github.com/rickstaa/ros-gazebo-gym-examples/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rickstaa/ros-gazebo-gym-examples.git"
+  },
+  "license": "MIT",
+  "author": "Rick Staa",
+  "main": "index.js",
+  "scripts": {
+    "changelog": "HUSKY=0 standard-version --skip.bump --skip.commit --skip.tag",
+    "preinstall": "npx only-allow pnpm",
+    "prepare": "husky install",
+    "release": "HUSKY=0 standard-version",
+    "sort": "sort-package-json"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "!(CHANGELOG)*.md": "./node_modules/.bin/remark . -o --"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^16.1.0",
+    "@commitlint/config-conventional": "^16.0.0",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "3.3.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.3",
+    "remark": "^14.0.2",
+    "remark-cli": "^10.0.1",
+    "remark-lint": "^9.1.1",
+    "remark-preset-lint-recommended": "^6.1.2",
+    "sort-package-json": "^1.54.0",
+    "standard-version": "^9.3.2"
+  }
+}
