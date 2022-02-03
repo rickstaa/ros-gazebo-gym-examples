@@ -1,0 +1,11 @@
+# Changelog
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## 1.1.0 (2022-02-03)
+
+
+### Features
+
+* add 'environment_type' cmdline argument ([a187734](https://github.com/rickstaa/ros-gazebo-gym-examples/commit/a187734c872e0f9c7911232daffd05dc0d86d022))
+* Add panda example ([9a4f77e](https://github.com/rickstaa/ros-gazebo-gym-examples/commit/9a4f77e99623e2ebbb878754c50935f50cb22b57))
