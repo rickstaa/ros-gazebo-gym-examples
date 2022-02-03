@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """A small example that can be used to train the DQN agent of the Openai
-stable-baselines3 package on the Panda environment of the ros_gazebo_gym package.
+stable-baselines3 package on the Panda environment of the
+:ros_gazebo_gym:`ros_gazebo_gym <>` package.
 """
 import functools
 from pathlib import Path
@@ -10,10 +11,10 @@ import numpy
 import rospkg
 import rospy
 import torch
-import ros_gazebo_gym  # noqa: F401
+import ros_gazebo_gym.task_envs  # noqa: F401
 from stable_baselines3 import SAC
 
-if __name__ == "__main__":
+if __name__ == "__main__":  # noqa C901
     rospy.init_node(
         "ros_gazebo_gym_panda_training_example", anonymous=True, log_level=rospy.WARN
     )
@@ -23,13 +24,18 @@ if __name__ == "__main__":
         control_type = rospy.get_param("~control_type")
     except KeyError:
         control_type = "effort"
+    try:
+        environment_type = rospy.get_param("~environment_type")
+    except KeyError:
+        environment_type = "slide"
+    environment_type = f"Panda{environment_type.capitalize()}-v0"
 
     # Init ros_gazebo_gym Panda environment
     rospy.loginfo("Creating ros_gazebo_gym Panda gym environmen...")
     task_and_robot_environment_name = rospy.get_param(
         "/ros_gazebo_gym_panda_example_params/task_env"
     )
-    env = gym.make("PandaReach-v0", control_type=control_type)
+    env = gym.make(environment_type, control_type=control_type)
     rospy.loginfo("Panda gym environment created.")
 
     # Set the logging system
