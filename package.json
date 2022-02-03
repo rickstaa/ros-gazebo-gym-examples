@@ -1,6 +1,6 @@
 {
   "name": "ros-gazebo-gym-examples",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Several usage examples for the gym task environments in the ros-gazebo-gym package.",
   "keywords": [
     "reinforcement-learning",
