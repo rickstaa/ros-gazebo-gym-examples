@@ -1,8 +1,8 @@
 ros_gazebo_gym_panda_example_params:
-  task_env: "PandaReach-v0"
-  # task_env: "PandaPickAndPlace-v0"
-  # task_env: "PandaPush-v0"
-  # task_env: "PandaSlide-v0"
+  task_env: "PandaReach-v1"
+  # task_env: "PandaPickAndPlace-v1"
+  # task_env: "PandaPush-v1"
+  # task_env: "PandaSlide-v1"
   # ros_ws_abspath: "/home/user/simulation_ws"
 
   # Q-learning parameters
