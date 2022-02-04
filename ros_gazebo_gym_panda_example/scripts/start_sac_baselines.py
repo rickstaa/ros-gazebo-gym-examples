@@ -11,7 +11,7 @@ import numpy
 import rospkg
 import rospy
 import torch
-import ros_gazebo_gym.task_envs  # noqa: F401
+import ros_gazebo_gym  # noqa: F401
 from stable_baselines3 import SAC
 
 if __name__ == "__main__":  # noqa C901
@@ -28,7 +28,7 @@ if __name__ == "__main__":  # noqa C901
         environment_type = rospy.get_param("~environment_type")
     except KeyError:
         environment_type = "slide"
-    environment_type = f"Panda{environment_type.capitalize()}-v0"
+    environment_type = f"Panda{environment_type.capitalize()}-v1"
 
     # Init ros_gazebo_gym Panda environment
     rospy.loginfo("Creating ros_gazebo_gym Panda gym environmen...")
