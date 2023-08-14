@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.0.2)
+cmake_minimum_required(VERSION 3.5)
 project(ros_gazebo_gym_panda_example)
 
 add_definitions(-std=c++11)
