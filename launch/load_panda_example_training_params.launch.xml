@@ -1,0 +1,7 @@
+<!-- 
+    This launch file can be used to load training parameters for the start_panda_training_sac_example.py script.
+-->
+<launch>
+    <!--Retrieve ros_gazebo_gym panda environment training parameters-->
+    <rosparam command="load" file="$(find ros_gazebo_gym_examples)/config/ros_gazebo_gym_panda_example_params.yaml" />
+</launch>

@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>ros_gazebo_gym_panda_example</name>
-  <version>1.0.0</version>
-  <description>Usage example for the ros_gazebo_gym Panda environment.</description>
+  <name>ros_gazebo_gym_examples</name>
+  <version>1.1.7</version>
+  <description>Several usage examples for gymnasium environments found in the ros-gazebo-gym package.</description>
   <maintainer email="rick.staa@outlook.com">rickstaa</maintainer>
   <license>MIT</license>
 
@@ -16,7 +16,7 @@
   <exec_depend>franka_gazebo</exec_depend>
 
   <!-- Python dependencies -->
+  <exec_depend>gymnasium-pip</exec_depend>
   <exec_depend>python3-numpy</exec_depend>
-  <exec_depend>gym-pip</exec_depend>
   <exec_depend>python3-stable-baselines3-pip</exec_depend>
 </package>
