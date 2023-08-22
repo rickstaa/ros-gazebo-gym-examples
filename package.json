@@ -20,7 +20,7 @@
     "emika-franka",
     "examples"
   ],
-  "homepage": "https://github.com/rickstaa/ros-gazebo-gym-examples#readme",
+  "homepage": "https://github.com/rickstaa/ros-gazebo-gym-examples#ros-gazebo-gym-examples",
   "bugs": {
     "url": "https://github.com/rickstaa/ros-gazebo-gym-examples/issues"
   },
