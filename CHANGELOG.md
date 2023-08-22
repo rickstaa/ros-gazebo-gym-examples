@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/rickstaa/ros-gazebo-gym-examples/compare/v1.1.7...v1.2.0) (2023-08-22)
+
+
+### Features
+
+* migrate to gymnasium and cleanup code ([#2](https://github.com/rickstaa/ros-gazebo-gym-examples/issues/2)) ([e1a4a16](https://github.com/rickstaa/ros-gazebo-gym-examples/commit/e1a4a1622c60873c47f920361100e8c49dd9c887))
+
+
+### Documentation
+
+* update docs ([#4](https://github.com/rickstaa/ros-gazebo-gym-examples/issues/4)) ([8937a0a](https://github.com/rickstaa/ros-gazebo-gym-examples/commit/8937a0ae8044a35b2312e505c54ce9e4b5d174a6))
+
 ### [1.1.7](https://github.com/rickstaa/ros-gazebo-gym-examples/compare/v1.1.6...v1.1.7) (2022-02-07)
 
 ### [1.1.6](https://github.com/rickstaa/ros-gazebo-gym-examples/compare/v1.1.5...v1.1.6) (2022-02-07)
