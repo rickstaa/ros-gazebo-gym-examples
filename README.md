@@ -9,6 +9,8 @@ This repository contains several usage examples for the gymnasium environments i
 
 ## How to use
 
+Below you can find instructions on how to use the examples in this repository. For more comprehensive instructions on how to use this package or the [ros\_gazebo\_gym](https://github.com/rickstaa/ros-gazebo-gym) framework, please refer to the [ros\_gazebo\_gym](https://rickstaa.dev/ros-gazebo-gym) documentation.
+
 ### Build the catkin workspace
 
 As the [ros-gazebo-gym](https://github.com/rickstaa/ros-gazebo-gym) and [ros-gazebo-gym-examples](https://github.com/rickstaa/ros-gazebo-gym-examples) packages are currently not available on the ROS package index, you will need to construct the catkin workspace manually. Comprehensive instructions for this process can be found in the [ROS documentation](https://wiki.ros.org/catkin/Tutorials/create_a_workspace). To simplify this, an easily accessible catkin workspace repository containing all necessary packages has been provided [here](https://github.com/rickstaa/ros-gazebo-gym-ws).
