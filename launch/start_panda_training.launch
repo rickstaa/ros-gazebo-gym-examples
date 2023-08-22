@@ -1,0 +1,27 @@
+<!--
+This launch can be used to train a Soft Actor-Critic (SAC) algorithm on the panda task environments found in the
+ros-gazebo-gym package. The training parameters can be set in the ros-gazebo-gym-examples/config/panda_example_training_params.yaml 
+
+Control arguments:
+    - control_type: The control type used for controlling the panda robot (Options: trajectory, position, effort, end_effector).
+    - environment_type: The panda task environment (Options: Reach, PickAndPlace, Slide, Push).
+-->
+<launch>
+    <!--Control arguments-->
+    <!--    The control type used for controlling the panda robot (Options: trajectory, position, effort, end_effector)-->
+    <arg name="control_type" default="effort"/>
+
+    <!--The panda task environment.
+        NOTE: Options: Reach, PickAndPlace, Slide, Push
+    -->
+    <arg name="environment_type" default="reach"/>
+
+    <!--Retrieve ros_gazebo_gym panda environment training parameters-->
+    <include file="$(find ros_gazebo_gym_examples)/launch/load_panda_example_training_params.launch.xml"/>
+
+    <!--Launch the training system-->
+    <node pkg="ros_gazebo_gym_examples" name="ros_gazebo_gym_panda_training_example" type="start_panda_training_sac_example.py" output="screen">
+        <param name="control_type" value="$(arg control_type)"/>
+        <param name="environment_type" value="$(arg environment_type)"/>
+    </node>
+</launch>

@@ -3,3 +3,10 @@ node_modules
 
 # logs
 *.log
+
+# Data
+training_results
+
+# IDE
+.vscode
+*.code-workspace

@@ -1,5 +1,5 @@
-cmake_minimum_required(VERSION 3.5)
-project(ros_gazebo_gym_panda_example)
+cmake_minimum_required(VERSION 3.10)
+project(ros_gazebo_gym_examples)
 
 add_definitions(-std=c++11)
 
@@ -10,7 +10,7 @@ find_package(catkin REQUIRED COMPONENTS
 
 catkin_package(
 #  INCLUDE_DIRS include
-#  LIBRARIES ros_gazebo_gym_panda_example
+#  LIBRARIES ros_gazebo_gym_examples
 #  CATKIN_DEPENDS ros_gazebo_gym rospy
 #  DEPENDS system_lib
 )
