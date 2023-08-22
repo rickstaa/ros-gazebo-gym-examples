@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.1](https://github.com/rickstaa/ros-gazebo-gym-examples/compare/v1.2.0...v1.2.1) (2023-08-22)
+
+
+### Documentation
+
+* improve README.md ([#6](https://github.com/rickstaa/ros-gazebo-gym-examples/issues/6)) ([fbb65a0](https://github.com/rickstaa/ros-gazebo-gym-examples/commit/fbb65a08e9db6b38c740c57f7691cc30f73e7c44))
+
 ## [1.2.0](https://github.com/rickstaa/ros-gazebo-gym-examples/compare/v1.1.7...v1.2.0) (2023-08-22)
 
 
