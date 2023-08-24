@@ -1,4 +1,4 @@
-# Ros-gazebo-gym-examples
+# ROS-gazebo-gym-examples
 
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/rickstaa/ros-gazebo-gym-examples)](https://github.com/rickstaa/ros-gazebo-gym-examples/releases)
 [![Python 3](https://img.shields.io/badge/Python-3.8%20%7C%203.7%20%7C%203.6-brightgreen)](https://www.python.org/)
