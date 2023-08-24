@@ -3,7 +3,7 @@
   "version": "1.2.1",
   "description": "Several usage examples for gymnasium environments found in the ros-gazebo-gym package.",
   "keywords": [
-    "reinforcement-learning",
+    "reinforcement learning",
     "RL",
     "robotics",
     "simulation",
@@ -15,7 +15,7 @@
     "ros",
     "gazebo",
     "environments",
-    "ros_gazebo_gym",
+    "ros-gazebo-gym",
     "panda",
     "emika-franka",
     "examples"
