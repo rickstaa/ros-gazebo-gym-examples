@@ -5,20 +5,26 @@
 .. _ros_gazebo_gym: https://github.com/rickstaa/ros-gazebo-gym
 """
 import os
+import re
 
 import gymnasium as gym
 import numpy as np
 import rospkg
 import rospy
 import torch
+from ros_gazebo_gym.common.helpers import (
+    list_2_human_text,
+    to_pascal_case,
+    to_snake_case,
+)
+from ros_gazebo_gym.core.helpers import ros_exit_gracefully
 from ros_gazebo_gym.task_envs.task_envs_list import ENVS
 from stable_baselines3 import SAC
 
-if __name__ == "__main__":
+if __name__ == "__main__":  # noqa: C901
     rospy.init_node(
         "ros_gazebo_gym_panda_training_sac_example",
         anonymous=True,
-        log_level=rospy.WARN,
     )
 
     # Retrieve input arguments.
@@ -30,14 +36,31 @@ if __name__ == "__main__":
         env_type = rospy.get_param("~environment_type")
     except KeyError:
         env_type = "slide"
-    env_id = (
-        "ros_gazebo_gym:"
-        + [
-            env
-            for env in ENVS.keys()
-            if env.startswith(f"Panda{env_type.capitalize()}")
-        ][0]
-    )
+    try:
+        env_id = (
+            "ros_gazebo_gym:"
+            + [
+                env
+                for env in ENVS.keys()
+                if env.startswith(f"Panda{to_pascal_case(env_type)}")
+            ][0]
+        )
+    except IndexError:
+        valid_env_ids = list(ENVS.keys())
+        valid_env_cmds = [
+            re.sub(r"panda_|(-v\d+)", "", to_snake_case(env)) for env in valid_env_ids
+        ]
+        valid_env_str = [
+            f"'{cmd}' (ros_gazebo_gym:{id})"
+            for cmd, id in zip(valid_env_cmds, valid_env_ids)
+        ]
+        rospy.logerr(
+            f"Could not find 'environment_type' 'Panda{to_pascal_case(env_type)}'. "
+            f"Valid options are: {list_2_human_text(valid_env_str)}."
+        )
+        ros_exit_gracefully(
+            shutdown_message=f"Shutting down {rospy.get_name()}", exit_code=1
+        )
 
     # Initialize the ros_gazebo_gym Panda environment.
     rospy.loginfo(f"Creating ros_gazebo_gym '{env_id}' gymnasium environment...")
