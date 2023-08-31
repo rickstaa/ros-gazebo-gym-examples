@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.2](https://github.com/rickstaa/ros-gazebo-gym-examples/compare/v1.2.1...v1.2.2) (2023-08-31)
+
+
+### Bug Fixes
+
+* fix panda training script index error ([#14](https://github.com/rickstaa/ros-gazebo-gym-examples/issues/14)) ([6ab6e0a](https://github.com/rickstaa/ros-gazebo-gym-examples/commit/6ab6e0a695ffc3949f1911b6c040254dfb127df0))
+* update gymnasium-(robotics) rosdep rules ([#8](https://github.com/rickstaa/ros-gazebo-gym-examples/issues/8)) ([ecba121](https://github.com/rickstaa/ros-gazebo-gym-examples/commit/ecba12102ccc2468560c30b2b166219d512783fc))
+
+
+### Documentation
+
+* add pre-commit note ([#13](https://github.com/rickstaa/ros-gazebo-gym-examples/issues/13)) ([e8664dd](https://github.com/rickstaa/ros-gazebo-gym-examples/commit/e8664dd896fd7ef911044ee8eee1c6347e9f52ab))
+* add zenodo reference and update docs ([#15](https://github.com/rickstaa/ros-gazebo-gym-examples/issues/15)) ([7524676](https://github.com/rickstaa/ros-gazebo-gym-examples/commit/75246765250dead1f2837c7830dd3d023e9a15be))
+* update README ([#9](https://github.com/rickstaa/ros-gazebo-gym-examples/issues/9)) ([0ec3623](https://github.com/rickstaa/ros-gazebo-gym-examples/commit/0ec36231ec20faf2e5270db35cebd8be0d0fbaf3))
+
 ## [1.2.1](https://github.com/rickstaa/ros-gazebo-gym-examples/compare/v1.2.0...v1.2.1) (2023-08-22)
 
 
