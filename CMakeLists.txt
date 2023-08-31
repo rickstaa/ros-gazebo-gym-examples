@@ -4,14 +4,14 @@ project(ros_gazebo_gym_examples)
 add_definitions(-std=c++11)
 
 find_package(catkin REQUIRED COMPONENTS
-  ros_gazebo_gym
   rospy
 )
 
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES ros_gazebo_gym_examples
-#  CATKIN_DEPENDS ros_gazebo_gym rospy
+  CATKIN_DEPENDS
+    ros_gazebo_gym rospy
 #  DEPENDS system_lib
 )
 
