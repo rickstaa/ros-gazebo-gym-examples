@@ -1,6 +1,6 @@
 {
   "name": "ros-gazebo-gym-examples",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Several usage examples for gymnasium environments found in the ros-gazebo-gym package.",
   "keywords": [
     "reinforcement learning",

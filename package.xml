@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package format="2">
   <name>ros_gazebo_gym_examples</name>
-  <version>1.2.1</version>
+  <version>1.2.2</version>
   <description>Several usage examples for gymnasium environments found in the ros-gazebo-gym package.</description>
   <maintainer email="rick.staa@outlook.com">rickstaa</maintainer>
   <license>MIT</license>
