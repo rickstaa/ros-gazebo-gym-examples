@@ -14,13 +14,13 @@ Welcome to the ROS Gazebo Gym Examples repository! Here you'll find a collection
 
 The following examples are currently available:
 
-*   [start\_panda\_training.launch](https://github.com/rickstaa/ros-gazebo-gym-examples/blob/noetic/launch/start_panda_training.launch): Launches a SAC agent for training in the Panda robotics environment.
+*   [start\_panda\_training.launch](./launch/start_panda_training.launch): Launches a SAC agent for training in the Panda robotics environment.
 
 For comprehensive guidance on utilizing these examples and leveraging the capabilities of the [ROS Gazebo Gym](https://rickstaa.dev/ros-gazebo-gym) package, please refer to the [documentation](https://rickstaa.dev/ros-gazebo-gym/get_started/usage.html#usage-examples).
 
 ## Contributing
 
-We use [husky](https://github.com/typicode/husky) pre-commit hooks and github actions to enforce high code quality. Please check the [contributing guidelines](https://github.com/rickstaa/ros-gazebo-gym/blob/noetic/CONTRIBUTING.md) in the [ros-gazebo-gym](https://github.com/rickstaa/ros-gazebo-gym) package before contributing to this repository.
+We use [husky](https://github.com/typicode/husky) pre-commit hooks and github actions to enforce high code quality. Please check the [contributing guidelines](CONTRIBUTING.md) in the [ros-gazebo-gym](https://github.com/rickstaa/ros-gazebo-gym) package before contributing to this repository.
 
 > \[!NOTE]\
 > We used [husky](https://github.com/typicode/husky) instead of [pre-commit](https://pre-commit.com/), which is more commonly used with Python projects. This was done because only some tools we wanted to use were possible to integrate the Please feel free to open a [PR](https://github.com/rickstaa/ros-gazebo-gym-examples/pulls) if you want to switch to pre-commit if this is no longer the case.
