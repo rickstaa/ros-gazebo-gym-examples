@@ -15,8 +15,8 @@
   <exec_depend>franka_gazebo</exec_depend>
 
   <!-- Python pip dependencies -->
-  <exec_depend>python-gymnasium-pip</exec_depend>
-  <exec_depend>python-gymnasium-robotics-pip</exec_depend>
+  <exec_depend>python3-gymnasium-pip</exec_depend>
+  <exec_depend>python3-gymnasium-robotics-pip</exec_depend>
   <exec_depend>python3-numpy</exec_depend>
   <exec_depend>python3-stable-baselines3-pip</exec_depend>
 </package>
