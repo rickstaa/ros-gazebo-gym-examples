@@ -33,6 +33,10 @@ if __name__ == "__main__":  # noqa: C901
     except KeyError:
         control_type = "effort"
     try:
+        positive_reward = rospy.get_param("~positive_reward")
+    except KeyError:
+        positive_reward = False
+    try:
         env_type = rospy.get_param("~environment_type")
     except KeyError:
         env_type = "slide"
@@ -67,6 +71,7 @@ if __name__ == "__main__":  # noqa: C901
     env = gym.make(
         env_id,
         control_type=control_type,
+        positive_reward=positive_reward,
         action_space_dtype=np.float32,
         observation_space_dtype=np.float32,
     )
