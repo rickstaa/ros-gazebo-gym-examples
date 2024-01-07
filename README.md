@@ -8,7 +8,7 @@
 [![Contributions](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![DOI](https://zenodo.org/badge/453634930.svg)](https://zenodo.org/badge/latestdoi/453634930)
 
-Welcome to the ROS Gazebo Gym Examples repository! Here you'll find a collection of usage examples for the gymnasium environments provided by the [ros-gazebo-gym](https://rickstaa.dev/ros-gazebo-gym) package.
+Welcome to the ROS Gazebo Gym Examples repository! In this repository, you will find a diverse range of examples demonstrating how to utilize the environments provided by the [ros-gazebo-gym](https://rickstaa.dev/ros-gazebo-gym) package effectively.
 
 ## Examples
 
