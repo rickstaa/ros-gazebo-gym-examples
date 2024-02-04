@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/rickstaa/ros-gazebo-gym-examples/compare/v1.2.2...v1.3.0) (2024-02-04)
+
+
+### Features
+
+* add 'positive_reward' launchfile argument ([9e9384c](https://github.com/rickstaa/ros-gazebo-gym-examples/commit/9e9384c5d50bcd8645fe1594a8a1f5b4c1978254))
+
+
+### Bug Fixes
+
+* fix gymnasium rosdep keys ([e6b7149](https://github.com/rickstaa/ros-gazebo-gym-examples/commit/e6b714990730fdb67fd081c7ff605af7fbc6e927))
+
+
+### Documentation
+
+* fix broken links ([80974e4](https://github.com/rickstaa/ros-gazebo-gym-examples/commit/80974e48e2beca38e27b0e9814f5efeb987595ce))
+* improve readme description ([9da4d15](https://github.com/rickstaa/ros-gazebo-gym-examples/commit/9da4d15ddedbaa0c569b1718040e31f493b5459f))
+
 ## [1.2.2](https://github.com/rickstaa/ros-gazebo-gym-examples/compare/v1.2.1...v1.2.2) (2023-08-31)
 
 
